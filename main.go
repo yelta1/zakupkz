@@ -30,7 +30,7 @@ var db *sql.DB
 
 func main() {
     var err error
-    db, err = sql.Open("mysql", "krmu_app:KRMU*2025@tcp(localhost:3306)/analka_db?parseTime=true")
+    db, err = sql.Open("mysql", "username:password@tcp(localhost:3306)/analka_db?parseTime=true")
     if err != nil {
         log.Fatal(err)
     }
